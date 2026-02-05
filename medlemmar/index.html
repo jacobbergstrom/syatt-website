@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min sida – SYATT</title>
+    
+    <!-- Memberstack -->
+    <script data-memberstack-app="app_cml8nbm3z02hb0stjgejd0474" src="https://static.memberstack.com/scripts/v2/memberstack.js" type="text/javascript"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Memberstack: Kräv inloggning för hela sidan -->
+    <div data-ms-content="members">
+    
+        <!-- Navigation -->
+        <nav id="navbar" class="scrolled">
+            <a href="../index.html" class="logo">
+                <img src="../images/syatt-logo.svg" alt="SYATT Logo">
+                
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="../events/index.html">Event</a></li>
+                <li><a href="index.html" class="nav-login">Min sida</a></li>
+                <li><a href="#" data-ms-action="logout" class="nav-login" style="background: transparent; border: 1px solid var(--gold); color: var(--gold);">Logga ut</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <p class="section-label">MEDLEMSPORTAL</p>
+            <h1>Välkommen, <span data-ms-member="firstName">medlem</span>!</h1>
+            <p>Här hittar du allt som medlem i SYATT</p>
+        </div>
+
+        <!-- Members Dashboard -->
+        <section class="members-dashboard">
+            <div class="container">
+                <div class="members-grid">
+                    
+                    <!-- Kommande event -->
+                    <div class="member-card">
+                        <h3>Kommande event</h3>
+                        <p>Se och anmäl dig till kommande luncher, middagar och aktiviteter</p>
+                        <a href="../events/index.html" class="btn btn-primary">Se event</a>
+                    </div>
+                    
+                    <!-- The Summit -->
+                    <div class="member-card">
+                        <h3>The Summit 2026</h3>
+                        <p>Boka din plats på årets Summit till medlemspris</p>
+                        <a href="../summit.html" class="btn btn-primary">Läs mer</a>
+                    </div>
+                    
+                    <!-- Min profil -->
+                    <div class="member-card">
+                        <h3>Min profil</h3>
+                        <p>Uppdatera dina uppgifter och inställningar</p>
+                        <a href="#" data-ms-modal="profile" class="btn btn-secondary">Redigera profil</a>
+                    </div>
+                    
+                </div>
+                
+                <!-- Medlemsexklusivt innehåll -->
+                <div style="margin-top: 80px;">
+                    <h2 class="section-title" style="text-align: center;">Exklusivt för medlemmar</h2>
+                    
+                    <div class="content-block" style="margin-top: 48px;">
+                        <p>Som medlem i SYATT får du tillgång till:</p>
+                        <ul>
+                            <li>Månatliga nätverksluncher med 8-12 utvalda ledare</li>
+                            <li>Exklusiva middagar på partnerhotell</li>
+                            <li>Kraftigt rabatterat pris på The Summit</li>
+                            <li>Personliga introduktioner till andra medlemmar</li>
+                            <li>Prioriterad plats på alla event</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>S.Y.A.T.T.</h3>
+                    <p>Ett nätverk för seniora ledare som vill fortsätta utvecklas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <a href="mailto:info@syatt.net">info@syatt.net</a>
+                    <a href="tel:+46761801000">+46 761 801 000</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 S.Y.A.T.T. See You At The Top AB</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Memberstack: Visa för utloggade (redirect) -->
+    <div data-ms-content="!members" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 48px;">
+        <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 24px;">Du måste vara inloggad</h2>
+        <p style="color: var(--grey); margin-bottom: 32px;">Denna sida är endast tillgänglig för medlemmar.</p>
+        <a href="#" data-ms-modal="login" class="btn btn-primary">Logga in</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../scripts.js"></script>
+
+</body>
+</html>
