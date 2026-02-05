@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SYATT – See You At The Top | Nätverk för Seniora Ledare</title>
-    <meta name="description" content="SYATT är ett exklusivt nätverk för seniora ledare och entreprenörer. Utvecklas genom meningsfulla samtal och generösa relationer.">
+    <meta name="description" content="SYATT är ett inbjudningsbaserat nätverk för entreprenörer, VD:ar och seniora ledare i Göteborg. Månatliga luncher, exklusiva middagar och en årlig Summit i Alperna.">
     
     <!-- Memberstack -->
     <script data-memberstack-app="app_cml8nbm3z02hb0stjgejd0474" src="https://static.memberstack.com/scripts/v2/memberstack.js" type="text/javascript"></script>
@@ -24,7 +24,6 @@
     <nav id="navbar">
         <a href="index.html" class="logo">
             <img src="images/syatt-logo.svg" alt="SYATT Logo">
-            
         </a>
         <ul class="nav-links">
             <li><a href="om-oss.html">Om oss</a></li>
@@ -32,9 +31,7 @@
             <li><a href="summit.html">The Summit</a></li>
             <li><a href="events/index.html">Event</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
-            <!-- Memberstack: Visa för utloggade -->
             <li data-ms-content="!members"><a href="#" data-ms-modal="login" class="nav-login">Logga in</a></li>
-            <!-- Memberstack: Visa för inloggade -->
             <li data-ms-content="members"><a href="medlemmar/index.html" class="nav-login">Min sida</a></li>
         </ul>
         <div class="menu-toggle" onclick="toggleMenu()">
@@ -44,15 +41,17 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (SPRINT 1: förtydligad + ny CTA) -->
     <section class="hero" id="hero">
         <div class="hero-content">
             <p class="hero-pretitle">ETT NÄTVERK FÖR SENIORA LEDARE</p>
             <h1>See You At<br><em>The Top</em></h1>
-            <p class="hero-subtitle">För dig som nått långt – men inte är färdig. Ett exklusivt nätverk där utveckling sker genom meningsfulla samtal och generösa relationer.</p>
+            <p class="hero-clarifier">
+                Ett inbjudningsbaserat nätverk för <strong>entreprenörer, VD:ar och seniora ledare</strong> i Göteborg — med månatliga luncher, exklusiva middagar och en årlig Summit i Alperna.
+            </p>
             <div class="hero-buttons">
-                <a href="medlemskap.html" class="btn btn-primary">BLI MEDLEM</a>
-                <a href="summit.html" class="btn btn-secondary">UPPTÄCK THE SUMMIT</a>
+                <a href="kontakt.html" class="btn btn-primary">ANSÖK OM INTRODUKTION</a>
+                <a href="#membership-journey" class="btn btn-secondary">SÅ BLIR DU MEDLEM</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -61,7 +60,48 @@
         </div>
     </section>
 
-    <!-- Philosophy Section (kort version) -->
+    <!-- SPRINT 1: Tre Pelare -->
+    <section class="pillars">
+        <div class="pillars-grid">
+            <div class="pillar">
+                <div class="pillar-icon">
+                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="14" r="8"/>
+                        <circle cx="10" cy="28" r="6"/>
+                        <circle cx="38" cy="28" r="6"/>
+                        <path d="M18 22 C14 24, 10 26, 10 28"/>
+                        <path d="M30 22 C34 24, 38 26, 38 28"/>
+                    </svg>
+                </div>
+                <h3>Nätverk</h3>
+                <p>Månatliga luncher och exklusiva middagar med handplockade ledare. Relationer som varar.</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">
+                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 40 L24 8 L40 40"/>
+                        <path d="M14 28 L34 28"/>
+                        <circle cx="24" cy="20" r="3"/>
+                    </svg>
+                </div>
+                <h3>Ledarutveckling</h3>
+                <p>Faciliterade samtal och workshops som utmanar ditt tänkande. Personlig tillväxt på djupet.</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">
+                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 38 L16 24 L24 30 L32 16 L40 22"/>
+                        <path d="M8 42 L40 42"/>
+                        <circle cx="24" cy="10" r="4"/>
+                    </svg>
+                </div>
+                <h3>Upplevelse</h3>
+                <p>Alperna, skidåkning, gourmetmiddagar. Aktiviteter som utmanar kropp och själ.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
     <section class="philosophy" id="philosophy">
         <div class="container">
             <div class="philosophy-grid">
@@ -75,6 +115,28 @@
                 <div class="philosophy-quote">
                     Hjälp andra att lyckas, så kommer du själv att lyckas
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPRINT 1: Social Proof Bar -->
+    <section class="social-proof">
+        <div class="proof-grid">
+            <div class="proof-item">
+                <div class="proof-number">2008</div>
+                <div class="proof-label">Grundat</div>
+            </div>
+            <div class="proof-item">
+                <div class="proof-number">15+</div>
+                <div class="proof-label">Summits</div>
+            </div>
+            <div class="proof-item">
+                <div class="proof-number">GBG</div>
+                <div class="proof-label">Bas i Göteborg</div>
+            </div>
+            <div class="proof-item">
+                <div class="proof-number">100+</div>
+                <div class="proof-label">Ledare i nätverket</div>
             </div>
         </div>
     </section>
@@ -103,48 +165,165 @@
         </div>
     </section>
 
+    <!-- SPRINT 1: Så blir du medlem (4 steg) -->
+    <section class="membership-journey" id="membership-journey">
+        <div class="container">
+            <p class="section-label">PROCESSEN</p>
+            <h2 class="section-title">Så blir du medlem</h2>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Introduktion</h3>
+                    <p>Du kontaktar oss eller rekommenderas av en befintlig medlem.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Samtal</h3>
+                    <p>Vi träffas för en personlig kaffe och pratar om vad du söker.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Prova på</h3>
+                    <p>Upplev nätverket genom att delta på en lunch eller ett event.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Välkommen</h3>
+                    <p>Du blir medlem och en del av SYATT-gemenskapen.</p>
+                </div>
+            </div>
+
+            <div class="steps-cta">
+                <a href="kontakt.html" class="btn btn-primary">ANSÖK OM INTRODUKTION</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Summit Preview -->
     <section class="summit-preview">
         <div class="container">
             <div class="summit-preview-grid">
                 <div class="summit-preview-content">
                     <p class="section-label">FLAGGSKEPPET</p>
-                    <h2 class="section-title">The Summit</h2>
-                    <p class="summit-location">Alperna – Januari varje år</p>
-                    <p>Fyra dagar av ledarutveckling på hög höjd. Förmiddagar med workshops och intellektuell stimulans. Eftermiddagar på skidor. Kvällar med djupa samtal och god mat.</p>
+                    <h2 class="section-title">The Summit 2026</h2>
+                    <p class="summit-location">Ellmau, Österrike – 14-17 januari</p>
+                    <p>Årets tema är <strong>TRUSTED</strong> — vad som bygger och bryter tillit i dagens komplexa och teknologiska landskap. Fyra dagar av ledarutveckling med workshops, skidåkning och djupa samtal.</p>
                     <a href="summit.html" class="btn btn-secondary" style="margin-top: 24px;">Upptäck The Summit</a>
                 </div>
                 <div class="summit-badge">
                     <h3>The Summit</h3>
                     <div class="year">2026</div>
-                    <div class="theme">Januari</div>
+                    <div class="theme">TRUSTED</div>
+                    <div class="dates">14–17 januari<br>Ellmau, Österrike</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Events Preview -->
-    <section class="events-preview">
+    <!-- SPRINT 1: Eventlista med riktiga datum -->
+    <section class="events-list">
         <div class="container">
             <p class="section-label">KOMMANDE EVENT</p>
             <h2 class="section-title">Mötesplatser genom året</h2>
             
-            <!-- Luma Calendar Embed -->
-            <div class="luma-calendar-container">
-                <iframe 
-                    src="https://lu.ma/embed/calendar/cal-AnyyxYm0sRZsHs2/events"
-                    width="100%"
-                    height="450"
-                    frameborder="0"
-                    style="border: 1px solid rgba(201, 162, 39, 0.3); border-radius: 8px; background: var(--charcoal);"
-                    allowfullscreen=""
-                    aria-hidden="false"
-                    tabindex="0">
-                </iframe>
+            <div class="event-cards">
+                <div class="event-card">
+                    <div class="event-meta">
+                        <span class="event-date">13 mars 2026</span>
+                        <span class="event-format">Lunch</span>
+                    </div>
+                    <h3>Nätverkslunch mars</h3>
+                    <p>Tema: Att leda i osäkerhet — faciliterat samtal i mindre grupp om 8–12 personer.</p>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Plats</div>
+                            <div class="event-detail-value">Hotel Pigalle, Göteborg</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Tid</div>
+                            <div class="event-detail-value">11:30 – 13:30</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Pris medlem</div>
+                            <div class="event-detail-value event-price-member">Ingår</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Pris gäst</div>
+                            <div class="event-detail-value">950 SEK</div>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <a href="kontakt.html" class="btn btn-primary" style="padding: 12px 28px; font-size: 0.7rem;">ANMÄL DIG</a>
+                        <span class="event-ical">＋ Lägg i kalender</span>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-meta">
+                        <span class="event-date">4 april 2026</span>
+                        <span class="event-format">Workshop</span>
+                    </div>
+                    <h3>Hour of Power</h3>
+                    <p>60 minuter av fokuserat erfarenhetsutbyte kring konkreta ledarskapsutmaningar.</p>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Plats</div>
+                            <div class="event-detail-value">Digitalt (Zoom)</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Tid</div>
+                            <div class="event-detail-value">08:00 – 09:00</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Pris medlem</div>
+                            <div class="event-detail-value event-price-member">Ingår</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Pris gäst</div>
+                            <div class="event-detail-value">450 SEK</div>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <a href="kontakt.html" class="btn btn-primary" style="padding: 12px 28px; font-size: 0.7rem;">ANMÄL DIG</a>
+                        <span class="event-ical">＋ Lägg i kalender</span>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-meta">
+                        <span class="event-date">23 maj 2026</span>
+                        <span class="event-format">Middag</span>
+                    </div>
+                    <h3>Vårmiddag på Sjömagasinet</h3>
+                    <p>En kväll med god mat, intressant gästtalare och möjlighet till djupa samtal i avslappnad miljö.</p>
+                    <div class="event-details">
+                        <div class="event-detail">
+                            <div class="event-detail-label">Plats</div>
+                            <div class="event-detail-value">Sjömagasinet, Göteborg</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Tid</div>
+                            <div class="event-detail-value">18:30 – 22:00</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Pris medlem</div>
+                            <div class="event-detail-value event-price-member">1 200 SEK</div>
+                        </div>
+                        <div class="event-detail">
+                            <div class="event-detail-label">Pris gäst</div>
+                            <div class="event-detail-value">2 400 SEK</div>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <a href="kontakt.html" class="btn btn-primary" style="padding: 12px 28px; font-size: 0.7rem;">ANMÄL DIG</a>
+                        <span class="event-ical">＋ Lägg i kalender</span>
+                    </div>
+                </div>
             </div>
-            
-            <div style="text-align: center; margin-top: 32px;">
-                <a href="events/index.html" class="btn btn-secondary">Se alla eventtyper</a>
+
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="events/index.html" class="btn btn-secondary">SE ALLA EVENT</a>
             </div>
         </div>
     </section>
@@ -177,7 +356,7 @@
         <div class="container">
             <h2>Nyfiken på att vara med?</h2>
             <p>SYATT bygger på personliga relationer. Kontakta oss för ett samtal – eller be någon i nätverket om en introduktion.</p>
-            <a href="kontakt.html" class="btn">KONTAKTA OSS</a>
+            <a href="kontakt.html" class="btn">ANSÖK OM INTRODUKTION</a>
         </div>
     </section>
 
