@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt – SYATT</title>
+    <title>Kontakt – Ansök om Introduktion till SYATT | Göteborg</title>
+    <meta name="description" content="Kontakta SYATT för att ansöka om introduktion till vårt ledarnätverk. Vi svarar inom 48 timmar. Telefon: +46 761 801 000. E-post: info@syatt.net">
     
     <!-- Memberstack -->
     <script data-memberstack-app="app_cml8nbm3z02hb0stjgejd0474" src="https://static.memberstack.com/scripts/v2/memberstack.js" type="text/javascript"></script>
@@ -23,7 +24,6 @@
     <nav id="navbar">
         <a href="index.html" class="logo">
             <img src="images/syatt-logo.svg" alt="SYATT Logo">
-            
         </a>
         <ul class="nav-links">
             <li><a href="om-oss.html">Om oss</a></li>
@@ -45,18 +45,42 @@
     <div class="page-header">
         <p class="section-label">KONTAKT</p>
         <h1>Nyfiken på att vara med?</h1>
-        <p>SYATT bygger på personliga relationer. Hör av dig så tar vi en kaffe.</p>
+        <p>SYATT bygger på personliga relationer. Berätta om dig själv så hör vi av oss.</p>
     </div>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h2>Låt oss prata</h2>
-                    <p>Har du frågor om SYATT, våra event eller medlemskap? Fyll i formuläret så hör vi av oss inom kort.</p>
-                    <p>Du kan också nå oss direkt via telefon eller e-post.</p>
-                    
+    <!-- SPRINT 1: Lead Form Section -->
+    <section class="lead-form-section">
+        <div class="lead-form-grid">
+            <div class="lead-form-info">
+                <p class="section-label">ANSÖK OM INTRODUKTION</p>
+                <h2>Låt oss prata</h2>
+                <p>Har du frågor om SYATT, våra event eller medlemskap? Fyll i formuläret så hör vi av oss inom 48 timmar.</p>
+                <p>Du kan också be en befintlig medlem om en personlig introduktion — det är ofta det bästa sättet att börja.</p>
+
+                <div class="process-mini">
+                    <h4>Så funkar det</h4>
+                    <div class="process-mini-steps">
+                        <div class="process-mini-step">
+                            <span class="process-mini-num">1</span>
+                            <span>Du fyller i formuläret</span>
+                        </div>
+                        <div class="process-mini-step">
+                            <span class="process-mini-num">2</span>
+                            <span>Vi hör av oss inom 48h</span>
+                        </div>
+                        <div class="process-mini-step">
+                            <span class="process-mini-num">3</span>
+                            <span>Vi träffas för en kaffe</span>
+                        </div>
+                        <div class="process-mini-step">
+                            <span class="process-mini-num">4</span>
+                            <span>Du provar ett event</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--grey-dark);">
+                    <h4 style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px;">Kontakta oss direkt</h4>
                     <div class="contact-details">
                         <a href="mailto:info@syatt.net">
                             <strong>E-post:</strong> info@syatt.net
@@ -65,29 +89,95 @@
                             <strong>Telefon:</strong> +46 761 801 000
                         </a>
                     </div>
-                    
-                    <div style="margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--grey-dark);">
-                        <h3 style="font-size: 1.3rem; margin-bottom: 16px;">Besöksadress</h3>
-                        <p style="color: var(--grey);">
-                            SYATT<br>
-                            Göteborg, Sverige
-                        </p>
+                </div>
+            </div>
+            
+            <div class="lead-form">
+                <h3>Ansök om introduktion</h3>
+                
+                <div class="form-group">
+                    <label>Jag är intresserad av</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" name="interest" id="int-member" checked>
+                            <label for="int-member">Medlemskap</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="interest" id="int-summit">
+                            <label for="int-summit">The Summit</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="interest" id="int-event">
+                            <label for="int-event">Event</label>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <!-- TALLY FORM EMBED -->
-                    <iframe 
-                        data-tally-src="https://tally.so/embed/68NY2e?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
-                        loading="lazy" 
-                        width="100%" 
-                        height="500" 
-                        frameborder="0" 
-                        marginheight="0" 
-                        marginwidth="0" 
-                        title="Kontaktformulär">
-                    </iframe>
+
+                <div class="form-group">
+                    <label>Namn</label>
+                    <input type="text" placeholder="Ditt namn">
                 </div>
+
+                <div class="form-group">
+                    <label>E-post</label>
+                    <input type="email" placeholder="din@epost.se">
+                </div>
+
+                <div class="form-group">
+                    <label>Telefon</label>
+                    <input type="tel" placeholder="+46 70 123 45 67">
+                </div>
+
+                <div class="form-group">
+                    <label>Roll & företag</label>
+                    <input type="text" placeholder="T.ex. VD, Företaget AB">
+                </div>
+
+                <div class="form-group">
+                    <label>Meddelande (valfritt)</label>
+                    <textarea placeholder="Berätta gärna varför du är intresserad eller hur du hörde om SYATT..."></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button class="btn btn-primary" style="width: 100%; text-align: center; border: none;">SKICKA</button>
+                </div>
+
+                <p class="form-note">Vi delar aldrig dina uppgifter. Du får svar inom 48 timmar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPRINT 1: Så blir du medlem -->
+    <section class="membership-journey">
+        <div class="container">
+            <p class="section-label">PROCESSEN</p>
+            <h2 class="section-title">Så blir du medlem</h2>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Introduktion</h3>
+                    <p>Du kontaktar oss eller rekommenderas av en befintlig medlem.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Samtal</h3>
+                    <p>Vi träffas för en personlig kaffe och pratar om vad du söker.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Prova på</h3>
+                    <p>Upplev nätverket genom att delta på en lunch eller ett event.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Välkommen</h3>
+                    <p>Du blir medlem och en del av SYATT-gemenskapen.</p>
+                </div>
+            </div>
+
+            <div class="steps-cta">
+                <a href="#" class="btn btn-secondary" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">TILLBAKA TILL FORMULÄRET</a>
             </div>
         </div>
     </section>
