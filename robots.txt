@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /medlemmar/
+
+Sitemap: https://www.syatt.net/sitemap.xml

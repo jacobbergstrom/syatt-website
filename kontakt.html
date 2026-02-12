@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt – Ansök om Introduktion till SYATT | Göteborg</title>
-    <meta name="description" content="Kontakta SYATT för att ansöka om introduktion till vårt ledarnätverk. Vi svarar inom 48 timmar. Telefon: +46 761 801 000. E-post: info@syatt.net">
+    <title>Kontakt – SYATT | Boka ett samtal</title>
+    <meta name="description" content="Kontakta SYATT för att boka ett personligt samtal. Vi berättar gärna mer om nätverket, våra event och medlemskap.">
+    
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.syatt.net/kontakt.html">
+    <meta property="og:title" content="Kontakt – SYATT | Boka ett samtal">
+    <meta property="og:description" content="Kontakta SYATT för att boka ett personligt samtal. Vi berättar gärna mer om nätverket, våra event och medlemskap.">
+    <meta property="og:image" content="https://www.syatt.net/images/syatt-og.png">
+    <meta property="og:locale" content="sv_SE">
     
     <!-- Memberstack -->
     <script data-memberstack-app="app_cml8nbm3z02hb0stjgejd0474" src="https://static.memberstack.com/scripts/v2/memberstack.js" type="text/javascript"></script>
@@ -24,6 +32,7 @@
     <nav id="navbar">
         <a href="index.html" class="logo">
             <img src="images/syatt-logo.svg" alt="SYATT Logo">
+            
         </a>
         <ul class="nav-links">
             <li><a href="om-oss.html">Om oss</a></li>
@@ -44,43 +53,56 @@
     <!-- Page Header -->
     <div class="page-header">
         <p class="section-label">KONTAKT</p>
-       <!-- SPRINT 1: Lead Form Section -->
-<section class="lead-form-section">
-    <div class="container">
-        <div class="lead-form-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
-            <div class="lead-form-info" style="text-align: center; margin-bottom: 48px;">
-                <p class="section-label">ANSÖK OM INTRODUKTION</p>
-                <h2>Låt oss prata</h2>
-                <p>Har du frågor om SYATT, våra event eller medlemskap? Fyll i formuläret så hör vi av oss inom 48 timmar.</p>
-                
-                <div style="display: flex; justify-content: center; gap: 48px; margin-top: 32px; flex-wrap: wrap;">
-                    <div>
-                        <a href="mailto:info@syatt.net" style="color: var(--gold);">info@syatt.net</a>
+        <h1>Boka ett samtal</h1>
+        <p>SYATT bygger på personliga relationer. Hör av dig så tar vi en kaffe och berättar mer.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Låt oss prata</h2>
+                    <p>Har du frågor om SYATT, våra event eller medlemskap? Fyll i formuläret så hör vi av oss inom kort.</p>
+                    <p>Du kan också nå oss direkt via telefon eller e-post.</p>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:info@syatt.net">
+                            <strong>E-post:</strong> info@syatt.net
+                        </a>
+                        <a href="tel:+46761801000">
+                            <strong>Telefon:</strong> +46 761 801 000
+                        </a>
                     </div>
-                    <div>
-                        <a href="tel:+46761801000" style="color: var(--gold);">+46 761 801 000</a>
+                    
+                    <div style="margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--grey-dark);">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 16px;">Besöksadress</h3>
+                        <p style="color: var(--grey);">
+                            SYATT<br>
+                            Göteborg, Sverige
+                        </p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="lead-form" style="max-width: 600px; margin: 0 auto; width: 100%;">
-                <h3 style="text-align: center;">Ansök om introduktion</h3>
                 
-                <!-- TALLY FORM EMBED -->
-                <iframe 
-                    data-tally-src="https://tally.so/embed/68NY2e?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
-                    loading="lazy" 
-                    width="100%" 
-                    height="500" 
-                    frameborder="0" 
-                    marginheight="0" 
-                    marginwidth="0" 
-                    title="Kontaktformulär">
-                </iframe>
+                <div class="contact-form">
+                    <!-- TALLY FORM EMBED -->
+                    <iframe 
+                        data-tally-src="https://tally.so/embed/68NY2e?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                        loading="lazy" 
+                        width="100%" 
+                        height="500" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        title="Kontaktformulär">
+                    </iframe>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
         <div class="footer-content">
             <div class="footer-brand">
                 <h3>S.Y.A.T.T.</h3>
